@@ -1,0 +1,152 @@
+*
+{
+  margin:0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+.contain
+{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  align-items:center;
+  float:center;
+  width:100%;
+  height:100%;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(111.jpg);
+  background-size:cover;
+  background-position: center;
+}
+.cont
+{
+  color:white;
+}
+.cont h1{
+  color: #d19c57;
+  margin-left:3%;
+  padding-left:3%;
+  font-size: 60px;
+  animation-name: moveinleft;
+  animation-duration: 2s;
+  animation-delay: 0.5 s;
+  /* animation-iteration-count: infinite;*/
+  animation-timing-function: ease-out; 
+}
+.cont h2
+{
+  margin-left:3%;
+  padding-left:3%;
+  font-size:38px;
+  animation-name:moveinright;
+  animation-duration: 2s;
+  animation-delay: 0.5 s;
+  /* animation-iteration-count: infinite;*/
+  animation-timing-function: ease-out; 
+}
+.search-box
+{
+  background:#fff;
+  width:fit-content;
+  display: flex;
+  align-items: center;
+  align-items:center;
+  padding:18px 20px;
+  border-radius:5px;
+  margin:20px 5px;
+  margin-left: 30px;
+  padding-left:30px;
+}
+.search-box input{
+  background: transparent;
+  width:600px;
+  border:0;
+  outline: none;
+  font-size: 16px;
+}
+.search-box button{
+  background: transparent;
+  border:0;
+  cursor:pointer;
+}
+.radhe{
+  margin-left: 20px;
+  padding-left:20px;
+}
+
+@keyframes moveinright 
+{
+  0% {
+    opacity: 0;
+    transform: translate(10rem);
+  }
+  /*80% {
+    opacity: 0.8;
+    transform: translate(-20px);/elements ko x-axis y-axis pe transform karney ke liye/
+  /*} */
+  100%
+   {
+    opacity: 1;
+    transform: translate(0rem);
+  }
+}
+@keyframes moveinleft {
+  0% {
+    opacity: 0;
+    transform: translate(-10rem);
+  }
+  /*80% {
+    opacity: 0.8;
+    transform: translate(-20px);/elements ko x-axis y-axis pe transform karney ke liye/
+  /* } 
+  */
+  100%
+   {
+    opacity: 1;
+    transform: translate(0rem);
+  }
+}
+@media (max-width:700px)
+{
+  .search-box input
+  {
+    
+    width:180px;
+  }
+  .cont h1{
+    font-size:35px;
+    color: #d19c57;
+  }
+  .search-box
+  {
+    padding-left: 2px;
+    margin-left: 2px;
+  }
+  .cont h2
+  {
+     font-size: 20px;
+     letter-spacing: 1px;
+  }
+
+  .radhe
+  {
+    margin-left:2px;
+    padding-left:2px;
+    color:#e4ded6;
+  }
+  .search-box{
+  
+   width: 220px;
+   margin-left: 10px;
+  }
+  /* .p1{
+    color: #ffe4c4;
+  }
+  .p2
+  {
+    font-size:1px;
+  } */
+  .text{
+    padding-left: 20px;
+  }
+}

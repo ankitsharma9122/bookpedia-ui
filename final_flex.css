@@ -1,0 +1,44 @@
+.wrapper
+{
+    display:flex;
+    flex-flow:row wrap;
+    text-align: center;
+}
+.wrapper > *
+{
+   
+    flex: 1 100%;
+    
+}
+
+.main
+{
+    background:rgb(23, 152, 184);
+    background-image: linear-gradient(rgba(20, 163, 168, 0.699),rgba(26, 8, 8, 0.897)),url(1.jpg);
+    border-radius: 5px;
+    height:65vh;
+    font-size: 24px;
+}
+.aside1
+{
+    float:right;
+    background-color: rgb(255, 51, 0);
+}
+@media all and (min-width:600px)
+{
+    .main
+    {
+        flex:3;
+    }
+
+   
+    .main{
+        order:1;
+    }
+
+    .footer
+    {
+    order:4;
+    }
+    
+}
